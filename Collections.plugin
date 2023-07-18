@@ -1,0 +1,119 @@
+#!name = App解锁合集
+#!desc = 合集App下载地址：
+#!openUrl = https://github.com/chxm1023/Script_X
+#!author = chxm1023
+#!homepage = https://t.me/chxm1023
+#!icon=https://raw.githubusercontent.com/chxm1023/Task/main/icon/ddm.png
+
+#============【使用说明】==============#
+# 使用声明：作者并未参与任何形式的金钱交易，仅限测试和学习，请勿转载与贩卖，下载使用后24小时请删除⚠️⚠️⚠️⚠️⚠️
+
+# 使用方法：先开脚本再打开App，自动会生效，如果无效就关了重开或者按一下恢复购买，在还不行就卸载App重新安装！最后还不行的话就是脚本失效了！
+
+# 已解锁App下载地址：https://too.st/chxm1023
+
+#=============UserScript=============#
+
+[URL Rewrite]
+# 彩云天气广告
+^https?:\/\/ad\.caiyunapp\.com - reject
+
+
+[Script]
+# Revenuecat解锁系列
+# hostname = api.revenuecat.com
+http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true, tag=Revenuecat解锁系列
+http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=false, tag=Reheji
+
+#************************************#
+# iTunes解锁系列
+# hostname = buy.itunes.apple.com
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true, tag=iTunes解锁系列
+
+#************************************#
+# Nicegram
+# hostname = restore-access.indream.app
+http-request ^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js, timeout=10, tag=Nicegram解锁会员
+
+
+
+#************************************#
+# PS 图片编辑
+# hostname = lcs-mobile-cops.adobe.io
+http-response ^https?:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Ps.js, requires-body=true, tag=Photoshop Express图片编辑
+
+
+#************************************#
+# 一言
+# hostname = app.yiyan.art
+http-response ^https?:\/\/app\.yiyan\.art\/yiyan script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/yiyan.js, requires-body=true, tag=一言
+
+
+
+#************************************#
+# 百度网盘，一刻相册 解锁部分功能
+# hostname = pan.baidu.com
+http-response ^https?:\/\/pan\.baidu\.com\/(youai\/(user\/.+\/getminfo|membership\/.+\/adswitch)|(rest\/.+\/membership\/user|act\/.+\/(bchannel|welfare)\/list|api\/usercfg)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js, requires-body=true, tag=百度网盘
+
+#************************************#
+# 阿里云盘 净化/解锁SVIP
+# hostname = *.aliyundrive.com
+http-response ^https?:\/\/(api|member)\.aliyundrive\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js, requires-body=true, tag=阿里网盘
+
+
+
+
+#************************************#
+# 小组件盒子
+# hostname = widget-box-api.codefuture.top
+http-response ^https?:\/\/widget-box-api\.codefuture\.top\/.+\/users\/me script-path=https://raw.githubusercontent.com/chxm1023/
+
+#************************************#
+# TopWidgets万能小组件
+# hostname = top-widgets-api.xiaozujian.com
+http-response ^https?:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js, requires-body=true, tag=TopWidgets万能小组件
+
+
+#************************************#
+# 美图秀秀
+# hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
+http-response ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js, requires-body=true, tag=美图秀秀
+
+
+#************************************#
+# 倒数纪念日
+# hostname = day-api.xixitime.com
+http-response ^https?:\/\/day-api\.xixitime\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/dsjnr.js, requires-body=true, tag=倒数纪念日
+
+
+#************************************#
+# 夸克
+# hostname = drive*.quark.cn
+http-response ^https?:\/\/drive.*\.quark\.cn\/.+\/clouddrive\/(member.+|distribute\/detail.+|capacity\/growth\/info) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/kuake.js, requires-body=true, tag=夸克
+
+
+
+#************************************#
+# WPS Office
+# hostname = *.wps.cn
+http-response ^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js, requires-body=true, tag=WPS
+
+
+
+#************************************#
+# Pixelup AI照片增强器
+# hostname = receipt-verifier.cdwapi.com
+http-response ^https?:\/\/receipt-verifier\.cdwapi\.com\/receipt script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Pixelup.js, requires-body=true, tag=Pixelup
+
+#************************************#
+# iScreen小组件-辅助解锁
+# hostname = cs.kuso.xyz
+http-response ^https?:\/\/cs\.kuso\.xyz\/configs.+ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iscreenfz.js, requires-body=true, tag=iscreen辅助
+
+
+
+
+
+#************************************#
+[MITM]
+hostname =  cs.kuso.xyz, receipt-verifier.cdwapi.com,  *.wps.cn, drive*.quark.cn, day-api.xixitime.com, *.xiuxiu.meitu.com, api.posters.meitu.com,api-*.meitu.com, top-widgets-api.xiaozujian.com, widget-box-api.codefuture.top, *.aliyundrive.com, pan.baidu.com,  app.yiyan.art, , lcs-mobile-cops.adobe.io, , restore-access.indream.app, buy.itunes.apple.com, api.revenuecat.com
